@@ -2,8 +2,6 @@
     <div class="container footer-wrap">
 
         <div class="row py-3">
-
-            <!-- بخش راه‌های ارتباطی -->
             <div class="col-lg-5 col-md-6 col-sm-12 px-md-3 mb-4 pl-lg-5">
                 <div class="d-flex align-items-center mb-4">
                     <svg width="41" height="41" viewbox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,14 +68,13 @@
                                       stroke-linejoin="round"></path>
                             </svg>
                             <p class="mr-2">
-                                <?php echo antispambot(get_theme_mod('petsyar_email', 'amixrzie@gmail.com')); ?>
+                                <?php echo antispambot(get_theme_mod('petsyar_email', 'petyarscontact@gmail.com')); ?>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- بخش پیوندها -->
             <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
                 <div class="d-flex align-items-center mb-4">
                     <svg width="41" height="41" viewbox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,13 +94,12 @@
                 <?php
                 wp_nav_menu([
                     'theme_location' => 'footer',
-                    'container'      => false,
-                    'menu_class'     => 'footer-category text-center',
+                    'container' => false,
+                    'menu_class' => 'footer-category text-center',
                 ]);
                 ?>
             </div>
 
-            <!-- بخش ساعت کاری -->
             <div class="col-lg-4 col-md-6  col-sm-12 mb-4">
                 <div class="d-flex align-items-center mb-4">
                     <svg width="41" height="41" viewbox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,17 +135,16 @@
             </div>
         </div>
 
-        <!-- بخش کپی‌رایت -->
         <div class="d-flex align-items-center justify-content-between copyright py-3 px-5 radius30">
             <div class="media-icone d-flex align-items-center">
                 <?php if (has_nav_menu('social')) : ?>
                     <?php
                     wp_nav_menu([
                         'theme_location' => 'social',
-                        'container'      => false,
-                        'menu_class'     => 'social-links d-flex',
-                        'link_before'    => '<span class="sr-only">',
-                        'link_after'     => '</span>',
+                        'container' => false,
+                        'menu_class' => 'social-links d-flex',
+                        'link_before' => '<span class="sr-only">',
+                        'link_after' => '</span>',
                     ]);
                     ?>
                 <?php endif; ?>
